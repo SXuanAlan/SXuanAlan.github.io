@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Shixuan (Alan) Zhao">
+  <meta name="description" content="Shixuan (Alan) Zhao is an M.S. student in Mechanical Engineering at Stanford University working on humanoid whole-body control, robot learning, and contact-rich interaction.">
+  <meta name="keywords" content="Shixuan Zhao, Alan Zhao, humanoid robotics, whole-body control, reinforcement learning, Stanford, BDML">
+  <title>Shixuan (Alan) Zhao</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* ====== Colors: edit here ====== */
+    :root {
+      --text: #222;
+      --muted: #555;
+      --link: #1772d0;
+      --link-hover: #f09228;
+      --rule: #e5e5e5;
+      --highlight: #fffbe6;
+      --bg: #fff;
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover, a:focus { color: var(--link-hover); }
+    a:focus-visible { outline: 2px solid var(--link-hover); outline-offset: 2px; }
+    strong { font-weight: 700; }
+
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 20px 24px;
+    }
+
+    /* ====== Header ====== */
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr 230px;
+      gap: 32px;
+      align-items: center;
+    }
+    .name {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 400;
+      margin: 0 0 18px;
+      letter-spacing: 0.01em;
+    }
+    .intro p { margin: 0 0 14px; }
+    .contact { text-align: center; margin-top: 18px; }
+    .contact a { white-space: nowrap; }
+    .contact .sep { color: #aaa; margin: 0 6px; }
+    .photo {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+    }
+
+    /* ====== Sections ====== */
+    h2 {
+      font-size: 22px;
+      font-weight: 400;
+      margin: 44px 0 6px;
+    }
+    .section-note { color: var(--muted); margin: 0 0 14px; }
+
+    .paper {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 24px;
+      padding: 18px 12px;
+      border-radius: 6px;
+    }
+    .paper.featured { background: var(--highlight); }
+    .paper + .paper { margin-top: 4px; }
+
+    .thumb {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      border-radius: 4px;
+      display: block;
+      background: #eef1f5;
+    }
+    .paper-title {
+      font-size: 16px;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+    .authors { margin: 0 0 2px; }
+    .venue { font-style: italic; margin: 0 0 4px; }
+    .links { margin: 0 0 8px; }
+    .links .sep { color: #aaa; margin: 0 4px; }
+    .tldr { margin: 0; color: var(--text); }
+    .status {
+      display: inline-block;
+      font-size: 12px;
+      color: #8a5a00;
+      background: #fff0c2;
+      padding: 1px 8px;
+      border-radius: 10px;
+      margin-left: 6px;
+      vertical-align: 2px;
+    }
+
+    .list { margin: 0; padding-left: 20px; }
+    .list li { margin-bottom: 4px; }
+    .list .when { color: var(--muted); }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 14px;
+      border-top: 1px solid var(--rule);
+      text-align: right;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* ====== Mobile ====== */
+    @media (max-width: 640px) {
+      .intro { grid-template-columns: 1fr; }
+      .intro .photo-wrap { order: -1; max-width: 180px; margin: 0 auto; }
+      .paper { grid-template-columns: 1fr; gap: 12px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      video.thumb { display: none; }
+      video.thumb + img.thumb-fallback { display: block; }
+    }
+    img.thumb-fallback { display: none; }
+  </style>
+</head>
+<body>
+<main class="page">
+
+  <!-- ================= INTRO ================= -->
+  <section class="intro">
+    <div>
+      <!-- TODO: add your Chinese name if you like, e.g. Shixuan (Alan) Zhao 「赵XX」 -->
+      <h1 class="name">Shixuan (Alan) Zhao</h1>
+
+      <p>
+        I am an M.S. student in Mechanical Engineering at
+        <a href="https://www.stanford.edu/">Stanford University</a>, where I am a graduate research assistant in the
+        <a href="https://bdml.stanford.edu/">Biomimetics &amp; Dexterous Manipulation Lab</a> advised by
+        <a href="https://profiles.stanford.edu/mark-cutkosky">Mark Cutkosky</a>, and work with
+        <a href="https://tml.stanford.edu/people/karen-liu">C. Karen Liu</a> on humanoid control.
+      </p>
+      <p>
+        I received dual bachelor's degrees in Mechanical Engineering from
+        <a href="https://www.arizona.edu/">The University of Arizona</a> and
+        <a href="https://www.hebut.edu.cn/">Hebei University of Technology</a>.
+      </p>
+      <p>
+        My interests are in humanoid whole-body control and robot learning, especially
+        contact-rich behaviors where the robot has to use its whole body, not just its feet,
+        to interact with the world.
+      </p>
+
+      <p class="contact">
+        <a href="mailto:sxuan@stanford.edu">Email</a><span class="sep">/</span>
+        <a href="data/Alan_Zhao_Resume.pdf">CV</a><span class="sep">/</span>
+        <a href="https://www.linkedin.com/in/shixuan-z-3074aa384">LinkedIn</a><span class="sep">/</span>
+        <!-- TODO: replace with your GitHub and Google Scholar links -->
+        <a href="https://github.com/YOUR-GITHUB">GitHub</a><span class="sep">/</span>
+        <a href="https://scholar.google.com/">Google Scholar</a>
+      </p>
+    </div>
+
+    <div class="photo-wrap">
+      <!-- TODO: put your photo at images/profile.jpg and change src below -->
+      <img class="photo" src="images/profile.svg" alt="Photo of Shixuan Zhao">
+    </div>
+  </section>
+
+  <!-- ================= RESEARCH ================= -->
+  <h2>Research</h2>
+  <p class="section-note">Projects I have contributed to. <strong>Highlighted</strong> is my main ongoing work.</p>
+
+  <!-- ---------- Ongoing project (TODO: fill in) ---------- -->
+  <article class="paper featured">
+    <div>
+      <!-- TODO: replace with a video, e.g.
+           <video class="thumb" src="images/climb/climb.mp4" autoplay muted loop playsinline></video> -->
+      <img class="thumb" src="images/ongoing.svg" alt="Placeholder for humanoid wall climbing video">
+    </div>
+    <div>
+      <span class="paper-title">Humanoid Wall Climbing with Compliant Spines</span>
+      <span class="status">In progress</span>
+      <p class="authors">
+        <strong>Shixuan Zhao</strong>,
+        <a href="https://samxie34.github.io/">Sam Xie</a>,
+        <a href="https://hao-l1.github.io/">Hao Li</a>,
+        Hayi Zhao,
+        Justin Chen,
+        Teo Ren,
+        Sirui Chen,
+        Zhanpeng He,
+        Qi Wu,
+        <a href="https://tml.stanford.edu/people/karen-liu">C. Karen Liu</a>,
+        <a href="https://profiles.stanford.edu/mark-cutkosky">Mark R. Cutkosky</a>
+      </p>
+      <p class="venue">In preparation</p>
+      <p class="links">
+        <!-- TODO: add links when ready -->
+        webpage (coming soon)
+      </p>
+      <p class="tldr">
+        Teaching a humanoid to climb steep walls with micro-spine end-effectors: a physics-based
+        spine contact model in simulation, RL policies that track contact-feasible whole-body
+        references, proprioceptive adaptation in place of force sensing, and deployment on hardware.
+      </p>
+    </div>
+  </article>
+
+  <!-- ---------- Fluorescent whisker ---------- -->
+  <article class="paper">
+    <div>
+      <a href="https://fluorescent-whisker.github.io/" aria-label="Fluorescent whisker project page">
+        <video class="thumb" src="https://fluorescent-whisker.github.io/static/videos/hero_loop.mp4"
+               poster="https://fluorescent-whisker.github.io/static/images/hero_poster.jpg"
+               autoplay muted loop playsinline></video>
+        <img class="thumb thumb-fallback" src="https://fluorescent-whisker.github.io/static/images/hero_poster.jpg" alt="">
+      </a>
+    </div>
+    <div>
+      <a class="paper-title" href="https://fluorescent-whisker.github.io/">
+        Fluorescence-Enhanced Whisker Array with Vision-Based Deformation Analysis for Underwater Source Localization
+      </a>
+      <p class="authors">
+        <a href="https://samxie34.github.io/">Xiaochi Xie</a>*,
+        <a href="https://hao-l1.github.io/">Hao Li</a>*,
+        <strong>Shixuan Zhao</strong>,
+        Siyue Yao,
+        <a href="https://shurans.github.io/">Shuran Song</a>,
+        <a href="https://profiles.stanford.edu/mark-cutkosky">Mark R. Cutkosky</a>
+      </p>
+      <p class="venue">Submitted to ICRA 2027</p>
+      <p class="links">
+        <a href="https://fluorescent-whisker.github.io/">webpage</a><span class="sep">|</span>
+        <a href="https://fluorescent-whisker.github.io/static/papers/whisker_arxiv.pdf">pdf</a>
+      </p>
+      <p class="tldr">
+        Five glowing whiskers and a single camera locate an underwater flow source in the dark.
+        I built the lightweight CNN that decodes whisker deformation into source position.
+      </p>
+    </div>
+  </article>
+
+  <!-- ---------- Compliant wrist ---------- -->
+  <article class="paper">
+    <div>
+      <a href="https://compliant-wrist.github.io/" aria-label="Compliant wrist project page">
+        <video class="thumb" src="https://compliant-wrist.github.io/assets/wrist-compliance.mp4"
+               poster="https://compliant-wrist.github.io/assets/wrist-compliance.jpg"
+               autoplay muted loop playsinline></video>
+        <img class="thumb thumb-fallback" src="https://compliant-wrist.github.io/assets/wrist-compliance.jpg" alt="">
+      </a>
+    </div>
+    <div>
+      <a class="paper-title" href="https://compliant-wrist.github.io/">
+        Lego-Like Stiffness Configuration of Planar Compliant Modules for Task-Specific Flexible Interfaces
+      </a>
+      <p class="authors">
+        Siyue Yao,
+        <a href="https://samxie34.github.io/">Xiaochi Xie</a>,
+        <strong>Shixuan Zhao</strong>,
+        Yutong Li,
+        <a href="https://hao-l1.github.io/">Hao Li</a>,
+        <a href="https://profiles.stanford.edu/mark-cutkosky">Mark R. Cutkosky</a>,
+        Genliang Chen
+      </p>
+      <p class="venue">Submitted to ICRA 2027</p>
+      <p class="links">
+        <a href="https://compliant-wrist.github.io/">webpage</a><span class="sep">|</span>
+        <a href="https://compliant-wrist.github.io/assets/compliant-wrist-paper.pdf">pdf</a>
+      </p>
+      <p class="tldr">
+        Stacking a few planar compliant modules gives a robot wrist the stiffness a task needs.
+        I implemented the robot control for the contact and high-speed interaction experiments.
+      </p>
+    </div>
+  </article>
+
+  <p class="section-note" style="margin-top:10px">* Equal contribution</p>
+
+  <!-- ================= EDUCATION ================= -->
+  <h2>Education</h2>
+  <ul class="list">
+    <li><strong>Stanford University</strong>, M.S. in Mechanical Engineering <span class="when">(2025 – present)</span></li>
+    <li><strong>The University of Arizona</strong>, B.S. in Mechanical Engineering <span class="when">(2021 – 2025)</span></li>
+    <li><strong>Hebei University of Technology</strong>, B.Eng. in Mechanical Engineering <span class="when">(2021 – 2025)</span></li>
+  </ul>
+
+  <footer>
+    Website template adapted from <a href="http://www.cs.berkeley.edu/~barron/">Jon Barron</a>.
+  </footer>
+
+</main>
+</body>
+</html>
