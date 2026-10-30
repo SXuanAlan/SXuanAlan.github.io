@@ -7,7 +7,7 @@ Deploy on GitHub Pages:
 4. Visit https://<your-github-username>.github.io after a minute.
 
 To edit: search index.html for `TODO`.
-- Photo: put `images/profile.jpg`, change the `src` of the photo.
+- Photo: replace `images/profile.png` to update your photo.
 - Ongoing project: replace `images/ongoing.svg` with a video, fill authors and links.
 - CV: replace `data/Alan_Zhao_Resume.pdf` when you update your resume.
 - Thumbnail videos for the papers load from their project sites; for faster loading, copy the mp4/jpg into `images/` and update the paths.
