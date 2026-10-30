@@ -10,4 +10,4 @@ To edit: search index.html for `TODO`.
 - Photo: put `images/profile.jpg`, change the `src` of the photo.
 - Ongoing project: replace `images/ongoing.svg` with a video, fill authors and links.
 - CV: replace `data/Alan_Zhao_Resume.pdf` when you update your resume.
-- Thumbnail videos for the two papers load from their project sites; for faster loading, copy the mp4/jpg into `images/` and update the paths.
+- Thumbnail videos for the papers load from their project sites; for faster loading, copy the mp4/jpg into `images/` and update the paths.
