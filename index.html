@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Shixuan (Alan) Zhao">
-  <meta name="description" content="Shixuan (Alan) Zhao is an M.S. student in Mechanical Engineering at Stanford University working on humanoid whole-body control, robot learning, and contact-rich interaction.">
-  <meta name="keywords" content="Shixuan Zhao, Alan Zhao, humanoid robotics, whole-body control, reinforcement learning, Stanford, BDML">
+  <meta name="description" content="Shixuan (Alan) Zhao is a Stanford M.S. student working on humanoid whole-body control in contact-rich and hazardous settings, and on demonstration-free learning.">
+  <meta name="keywords" content="Shixuan Zhao, Alan Zhao, humanoid robotics, whole-body control, contact-rich control, demonstration-free learning, reinforcement learning, wall climbing, Stanford, BDML">
   <title>Shixuan (Alan) Zhao</title>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -167,9 +167,12 @@
         <a href="https://www.hebut.edu.cn/">Hebei University of Technology</a>.
       </p>
       <p>
-        My interests are in humanoid whole-body control and robot learning, especially
-        contact-rich behaviors where the robot has to use its whole body, not just its feet,
-        to interact with the world.
+        My interests are in humanoid whole-body control in contact-rich, extreme or hazardous
+        settings. Human demonstrations of such skills are often unavailable, because the task is
+        too dangerous for a person to perform, or infeasible, because the motion is specific to the
+        robot's body. I am especially interested in learning these skills without demonstrations,
+        by generating physically feasible whole-body motions from a task description and a model
+        of the contacts.
       </p>
 
       <p class="contact">
@@ -220,9 +223,11 @@
         <a href="https://humanoid-climbing.github.io/">webpage</a>
       </p>
       <p class="tldr">
-        Teaching a humanoid to climb vertical walls on micro-spine palms. A single probabilistic
-        model of how the spines hold and let go is used to design the palms, to generate and certify
-        whole-body climbing references, and to train the climbing policies in simulation.
+        Teaching a humanoid to climb vertical walls on micro-spine palms, toward inspection and
+        maintenance work that is dangerous for people. The climbing motions are generated from a task
+        description instead of human demonstrations, and a single probabilistic model of how the
+        spines hold and let go is used throughout: to design the palms, to generate and certify the
+        whole-body motions, and to train the policies in simulation.
       </p>
     </div>
   </article>
