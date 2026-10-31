@@ -8,6 +8,6 @@ Deploy on GitHub Pages:
 
 To edit: search index.html for `TODO`.
 - Photo: replace `images/profile.png` to update your photo.
-- CV: replace `data/Alan_Zhao_Resume.pdf` when you update your resume.
+- CV: edit `data/Alan_Zhao_Resume.tex`, compile it with pdfLaTeX (e.g. on Overleaf), and replace `data/Alan_Zhao_Resume.pdf` with the output.
 - Thumbnail videos for the papers load from their project sites; for faster loading, copy the mp4/jpg into `images/` and update the paths.
 - Climbing thumbnail: `images/climbing-thumb.mp4` (poster `climbing-thumb.jpg`) puts two clips from https://humanoid-climbing.github.io/ side by side, `media/ref-corner.mp4` on the left and `media/human-climb.mp4` on the right.
