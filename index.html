@@ -189,15 +189,18 @@
   <h2>Research</h2>
   <p class="section-note">Projects I have contributed to. <strong>Highlighted</strong> is my main ongoing work.</p>
 
-  <!-- ---------- Ongoing project (TODO: fill in) ---------- -->
+  <!-- ---------- Ongoing project ---------- -->
   <article class="paper featured">
     <div>
-      <!-- TODO: replace with a video, e.g.
-           <video class="thumb" src="images/climb/climb.mp4" autoplay muted loop playsinline></video> -->
-      <img class="thumb" src="images/ongoing.svg" alt="Placeholder for humanoid wall climbing video">
+      <a href="https://humanoid-climbing.github.io/" aria-label="Humanoid wall climbing project page">
+        <video class="thumb" src="images/climbing-thumb.mp4"
+               poster="images/climbing-thumb.jpg"
+               autoplay muted loop playsinline></video>
+        <img class="thumb thumb-fallback" src="images/climbing-thumb.jpg" alt="">
+      </a>
     </div>
     <div>
-      <span class="paper-title">Humanoid Wall Climbing with Compliant Spines</span>
+      <a class="paper-title" href="https://humanoid-climbing.github.io/">Humanoid Wall Climbing with Compliant Spines</a>
       <span class="status">In progress</span>
       <p class="authors">
         <strong>Shixuan Zhao</strong>,
@@ -217,9 +220,9 @@
         <a href="https://humanoid-climbing.github.io/">webpage</a>
       </p>
       <p class="tldr">
-        Teaching a humanoid to climb steep walls with micro-spine end-effectors: a physics-based
-        spine contact model in simulation, RL policies that track contact-feasible whole-body
-        references, proprioceptive adaptation in place of force sensing, and deployment on hardware.
+        Teaching a humanoid to climb vertical walls on micro-spine palms. A single probabilistic
+        model of how the spines hold and let go is used to design the palms, to generate and certify
+        whole-body climbing references, and to train the climbing policies in simulation.
       </p>
     </div>
   </article>
